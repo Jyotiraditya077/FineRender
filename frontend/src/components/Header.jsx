@@ -72,15 +72,19 @@ const Header = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
             >
-                {Array(6).fill('').map((item, index) => (
+            {Array(6).fill('').map((item, index) => {
+                const imageSrc = [assets.sample_img_1, assets.sample_img_2, assets.sample_img_3][index % 3];
+                return (
                     <motion.img
                         className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10'
                         width={70}
                         key={index}
-                        src={index % 2 === 0 ? assets.sample_img_2 : assets.sample_img_1}
+                        src={imageSrc}
                         whileHover={{ scale: 1.05, duration: 0.1 }}
                     />
-                ))}
+                );
+            })}
+
             </motion.div>
 
             <motion.p
@@ -89,7 +93,7 @@ const Header = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
             >
-                Generated images from imagify
+                Generated images from FineRender
             </motion.p>
         </motion.div>
     )
