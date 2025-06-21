@@ -17,19 +17,20 @@ import AnimatedBackground from './components/AnimatedBackground';
 
 const App = () => {
   const { showLogin } = useContext(AppContext);
-
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null); // initially null (not known)
 
   useEffect(() => {
-    const handleResize = () => {
+    const checkDevice = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    handleResize(); // Check on mount
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
+    return () => window.removeEventListener('resize', checkDevice);
   }, []);
+
+  // 👇 Prevent any render until isMobile is determined
+  if (isMobile === null) return null;
 
   return (
     <>
