@@ -162,6 +162,6 @@ body {
 
   .g1, .g2, .g3, .g4, .g5, .interactive {
     animation: none !important;
-    opacity: 0.3 !important; /* Optional: to reduce layer count */
+    opacity: 0 !important; /* Optional: to reduce layer count */
   }
 }
