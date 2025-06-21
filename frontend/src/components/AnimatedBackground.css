@@ -152,3 +152,16 @@ body {
   left: -50%;
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  .gradient-bg,
+  .gradients-container {
+    filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .g1, .g2, .g3, .g4, .g5, .interactive {
+    animation: none !important;
+    opacity: 0.3 !important; /* Optional: to reduce layer count */
+  }
+}
