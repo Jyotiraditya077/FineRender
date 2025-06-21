@@ -1,7 +1,7 @@
-# FineRides
+# FineRender
 
 <p align="center">
-  <img src="blob:https://image.pi7.org/5afd6999-5658-4bca-942b-f8b1e98d5afe" alt="FineRides Logo" width="170px">
+  <img src="https://github.com/Jyotiraditya077/FineRender/blob/main/frontend/src/assets/inverted-logo.png" alt="FineRender Logo" width="170px">
 </p>
 
 **FineRender** is a modern AI SaaS platform that transforms text prompts into high-quality visuals using the ClipDrop API. Designed with performance and simplicity in mind, it enables users to generate, preview, and download AI-generated images in seconds.
@@ -22,19 +22,19 @@
 
 ## Features
 
-✔️ AI-based image generation using ClipDrop API 
-✔️ Seamless authentication with JWT 
-✔️ Fully responsive SaaS interface with animations via Framer Motion 
-✔️ **Stripe** and **Razorpay** integration for secure payments 
-✔️ Dynamic prompt-based rendering with interactive UI 
-✔️ MongoDB database for persistent user & generation data 
-✔️ Clean, user-friendly UX for all device sizes 
+✔️ AI-based image generation using ClipDrop API  
+✔️ Seamless authentication with JWT  
+✔️ Fully responsive SaaS interface with animations via Framer Motion  
+✔️ **Stripe** and **Razorpay** integration for secure payments  
+✔️ Dynamic prompt-based rendering with interactive UI  
+✔️ MongoDB database for persistent user & generation data  
+✔️ Clean, user-friendly UX for all device sizes  
 
 ---
 
 ## Demo
 
-🔗 **Live App**: [FineRides Live](https://finerides.vercel.app)
+🔗 **Live App**: [FineRender Live](https://finerender.vercel.app)
 
 ## Tech Stack
 
