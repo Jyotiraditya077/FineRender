@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <>
-      {!isMobile && <div style={{ background: 'black' }}></div>}
+      {!isMobile && <AnimatedBackground />}
       <div className="relative z-10 px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen">
         <ToastContainer position="bottom-right" />
         <Navbar />
