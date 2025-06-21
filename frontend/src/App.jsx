@@ -17,19 +17,20 @@ import AnimatedBackground from './components/AnimatedBackground';
 
 const App = () => {
   const { showLogin } = useContext(AppContext);
-  const [showBackground, setShowBackground] = useState(window.innerWidth > 768); // only load immediately on desktop
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth <= 768) {
-      // Delay background on mobile to reduce load lag
-      const timeout = setTimeout(() => setShowBackground(true), 1200);
-      return () => clearTimeout(timeout);
-    }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize(); // check on load
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
     <>
-      {showBackground && <AnimatedBackground />}
+      {!isMobile && <AnimatedBackground />}
       <div className="relative z-10 px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen">
         <ToastContainer position="bottom-right" />
         <Navbar />
