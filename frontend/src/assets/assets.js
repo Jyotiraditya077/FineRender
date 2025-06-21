@@ -62,29 +62,31 @@ export const stepsData = [
     },
   ];
 
-export const testimonialsData = [
+  export const testimonialsData = [
     {
-        image:profile_img_1,
-        name:'Donald Jackman',
-        role:'Graphic Designer',
-        stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+      image: profile_img_1,
+      name: 'David Kim',
+      role: 'Creative Director',
+      stars: 5,
+      text: `FineRender is an absolute game-changer. The AI generates high-quality visuals in seconds — it’s now a crucial part of my daily creative process.`
     },
     {
-        image:profile_img_2,
-        name:'Richard Nelson',
-        role:'Content Creator',
-        stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
+      image: profile_img_2,
+      name: 'Aarushi Verma',
+      role: 'Content Creator',
+      stars: 5,
+      text: `I love how simple FineRender is to use. Just type an idea and it turns it into art! It's helped me level up my content with unique, eye-catching visuals.`
     },
     {
-        image:profile_img_3,
-        name:'Donald Jackman',
-        role:' Graphic Designer',
-        stars:5,
-        text:`I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.`
-    },
-]
+      image: profile_img_3,
+      name: 'Lucas Ferreira',
+      role: 'Visual Designer',
+      stars: 5,
+      text: `From product concepts to abstract visuals, FineRender nails it every time. It’s like having a creative assistant that never sleeps.`
+    }
+  ];
+  
+  
 
 export const plans = [
     {
