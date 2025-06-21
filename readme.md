@@ -22,13 +22,13 @@
 
 ## Features
 
-✔️ AI-based image generation using ClipDrop API
-✔️ Seamless authentication with JWT
-✔️ Fully responsive SaaS interface with animations via Framer Motion
-✔️ **Stripe** and **Razorpay** integration for secure payments
-✔️ Dynamic prompt-based rendering with interactive UI
-✔️ MongoDB database for persistent user & generation data
-✔️ Clean, user-friendly UX for all device sizes
+✔️ AI-based image generation using ClipDrop API 
+✔️ Seamless authentication with JWT 
+✔️ Fully responsive SaaS interface with animations via Framer Motion 
+✔️ **Stripe** and **Razorpay** integration for secure payments 
+✔️ Dynamic prompt-based rendering with interactive UI 
+✔️ MongoDB database for persistent user & generation data 
+✔️ Clean, user-friendly UX for all device sizes 
 
 ---
 
@@ -131,6 +131,9 @@ VITE_BACKEND_URL=your_backend_api_url
 
 # Razorpay Public Key
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+
+```
+(Replace placeholders with actual values.)
 
 
 ---
